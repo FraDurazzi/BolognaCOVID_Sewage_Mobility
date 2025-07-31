@@ -297,9 +297,9 @@ def run_simulation(days = 60, dt = _DT_, beta = 1/1.2, alpha = .14,
     t = np.array([t for t in range(max_step+1)])
     if return_new_positives:
         if return_vaccinated:
-            return (t, S, E, I, U, R, Phi_EU, Phi_V, TOT)
+            return (t, S, E, I, U, R, Phi_UI, Phi_V, TOT)
         else:
-            return (t, S, E, I, U, R, Phi_EU, TOT)
+            return (t, S, E, I, U, R, Phi_UI, TOT)
     else:
         if return_vaccinated:
             return(t, S, E, I, U, R, Phi_V, TOT)
